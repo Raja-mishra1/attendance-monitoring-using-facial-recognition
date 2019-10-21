@@ -3,11 +3,22 @@
 
 This is my attempt to make a Face recognition system for classroom or office attendance. The system is based on a special type of cnn architecture known as a siamese network. Such a network is trained to generate a very accurate and almost unique 128 vector given that the images of face which a are fed to the network are properly aligned and cropped.
 Then another dense neural network is trained taking input these embeddings. The second neural network is only for classification purposes. Then the person who is identified by the system, his/her attendance in the system is incremented by 1.
+
+
+
+
+
+
+
+
+
+
 When the system is closed, a excel file consisting of attendance of all the students is generated.
 
 maxresdefault taken from DeepLearning.ai.
 You can watch these videos. Professor Andrew Ng gives an excellent explanation to these networks.
 Embedding Generator
+
 
 I have download the pretrained facenet model from nyoki-mtl githubu
 This network is pretrained on a pretty large dataset, and produces a unique 128 dimensional vector for a particular face given the images fed to it are cropped to only the face region and are alligned. The input size of image for this netowrk is 160X160X3
@@ -28,13 +39,7 @@ Installing the requirements
 
     Start your terminal of cmd depending on your os.
 
-    If you have a NVidia GPU then make sure you have the prerequisites for Tensorflow GPU installation (Refer to official site). Then use this commmand
-
-    pip install -r requirements_gpu.txt
-
-    In case you do not have a GPU then use this command
-
-pip install -r requirements_cpu.txt
+pip install -r requirements.txt
 
 
 Apart from all this you also have to install mongodb in your system.
@@ -46,7 +51,6 @@ Want to run it on your own
 
 3)Now run Generating_training_data.py, when this runs enter the name of the person followed by a index beginning from zero for example, if I want to generate data for "ravi", I will write "ravi0" and for the next name write "secondname1", just make sure the index given to everybody is in increasing order. Now put all this folders into the people folder
 
-screenshot from 2018-09-26 18-00-10
 
 4)Now in trainer.py change the number of classes according to number of folder and then run trainer.py
 

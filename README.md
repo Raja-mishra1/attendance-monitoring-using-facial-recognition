@@ -28,14 +28,14 @@ Requiremnents
 
 # Installing the requirements
 
-    Start your terminal of cmd depending on your os.
+    Start your terminal and fire the commands.
 
 pip install -r requirements.txt
 
 
 Apart from all this you also have to install mongodb in your system.
 
-# Watching it come alive on your own system
+# Watch it come alive on your own system
 
 1)Install all the requirements
 
@@ -59,3 +59,7 @@ c)add the enteries. For eg db.pa.insert({"name":"Raja","attendance":0})
 8)Dictionary "people" is self explanatory.
 
 9)Run recognizer.py to recognize people. Their attendance will be registered in the mongodb database.
+
+# Suggestions
+a) If you find some issues please report in the issues section.
+b) If you liked the project please give a star. 

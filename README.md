@@ -62,4 +62,5 @@ c)add the enteries. For eg db.pa.insert({"name":"Raja","attendance":0})
 
 # Suggestions
 a) If you find some issues please report in the issues section.
+
 b) If you liked the project please give a star. 
